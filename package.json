@@ -2,6 +2,7 @@
   "name": "buscarcep",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://giuliaamaral.github.io/buscarCEP/",
   "dependencies": {
     "@popperjs/core": "^2.11.0",
     "@testing-library/jest-dom": "^5.16.1",
