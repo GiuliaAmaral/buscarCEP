@@ -77,10 +77,10 @@ function App() {
 
     <div className="App">
 
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src={logo} alt="" width="30" height="24" class="d-inline-block align-text-top" />
+      <nav className="navbar navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">
+            <img src={logo} alt="" width="30" height="24" className="d-inline-block align-text-top" />
             Buscador de CEP
           </a>
         </div>
@@ -88,11 +88,11 @@ function App() {
 
       <br />
 
-      <section class="container" id='print'>
-        <div class="mb-3">
-          <label for="cep" class="form-label">Coloque aqui o CEP</label>
-          <input maxLength="8" type="text" class="form-control" id="cep" onChange={(e) => buscarCep(e)} />
-          <div id="cep" class="form-text">Busque CEP em todo território nacional</div>
+      <section className="container" id='print'>
+        <div className="mb-3">
+          <label for="cep" className="form-label">Coloque aqui o CEP</label>
+          <input maxLength="8" type="text" className="form-control" id="cep" onChange={(e) => buscarCep(e)} />
+          <div id="cep" className="form-text">Busque CEP em todo território nacional</div>
         </div>
 
 
@@ -102,7 +102,7 @@ function App() {
       {
         (respostaAPI?.cep === undefined) ? (<></>) : (<>
 
-          <section class="container text-center" style={{ background: "whitesmoke" }}>
+          <section className="container text-center" style={{ background: "whitesmoke" }}>
             <p>Cep: {respostaAPI?.cep}</p>
             <p>Endereço: {respostaAPI?.street}</p>
             <p>Bairro: {respostaAPI?.neighborhood}</p>
@@ -111,8 +111,8 @@ function App() {
           </section>
 
 
-          <div class=" container d-grid gap-2 col-6 mx-auto">
-            <button onClick={impimirPDF} class="btn btn-primary" type="button">Imprimir</button>
+          <div className=" container d-grid gap-2 col-6 mx-auto">
+            <button onClick={impimirPDF} className="btn btn-primary" type="button">Imprimir</button>
           </div>
 
         </>)
@@ -134,7 +134,7 @@ function App() {
               <div className="toast-body">
                 {mensagem?.texto}
               </div>
-              <button onClick={() => { setMensagem(null) }} type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button onClick={() => { setMensagem(null) }} type="button" className="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
           </div>
         </div>
